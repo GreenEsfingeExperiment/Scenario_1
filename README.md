@@ -1,6 +1,6 @@
 # 🛒 Product Recommendation System – GreenEsfinge Experiment
 
-This project simulates a simplified product recommendation system, commonly found in e-commerce platforms. It is part of an experiment designed to demonstrate how energy-saving strategies can be integrated into Java applications using the **GreenEsfinge Framework**.
+This project simulates a simplified product recommendation system, commonly found in e-commerce platforms. It is part of an experiment designed to demonstrate how energy-saving strategies can be integrated into Java applications **without** using the **GreenEsfinge Framework**.
 
 ## 📦 Project Structure
 
