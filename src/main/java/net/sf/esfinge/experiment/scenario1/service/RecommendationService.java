@@ -1,23 +1,32 @@
 package net.sf.esfinge.experiment.scenario1.service;
 
-import net.sf.esfinge.experiment.scenario1.repository.RecommendationRepository;
-
 public class RecommendationService {
 
-    private final RecommendationRepository repository = new RecommendationRepository();
     private boolean toggle;
 
-    public String findRecommendation() {
-        String product = repository.findProduct();
-        Integer views = repository.findVisits();
-        String otherProduct = repository.findOtherProduct();
-
+    public void findRecommendation(StringBuilder sb) {
         //USE the toggle logic
-
-        return String.format("%s received %d visits this month.\n Also check out %s!", product, views, otherProduct);
+        sb.append(findProduct())
+            .append(" received ")
+            .append(findVisits())
+            .append(" visits this month.\n Also check out ")
+            .append(findOtherProduct())
+            .append("!");
     }
 
-    public void setToggle(boolean toggle){
+    private String findProduct() {
+        return "JBL 510BT Bluetooth Headphones";
+    }
+
+    public Integer findVisits() {
+        return 1231;
+    }
+
+    public String findOtherProduct() {
+        return "HyperX Cloud Stinger Headphones";
+    }
+
+    public void setToggle(boolean toggle) {
         this.toggle = toggle;
     }
 }
