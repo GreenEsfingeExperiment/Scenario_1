@@ -18,6 +18,6 @@ The test class `RecommendationServiceTest` validates the behavior of the recomme
 
 In this task, you will see something like this, and the goal is to make all tests pass successfully.
 
-> But remember, only for find the another product.
+> But remember, this applies only to finding the other product.
 
 ![img.png](img.png)
