@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class RecommendationServiceTest {
 
     private static final String RECOMMENDATION = "Tenis Casual received 106 visits this month.\n Also check out Mochila Executiva!";
-    private static final String MINUS_ENERGY_RECOMMENDATION = "Tenis Casual received 106 visits this month.";
+    private static final String SAVE_ENERGY_RECOMMENDATION = "Tenis Casual received 106 visits this month.";
 
     @Test
     void testFindRecommendation() {
@@ -26,7 +26,7 @@ class RecommendationServiceTest {
 
         String recommendation = recommendationService.findRecommendation();
 
-        assertEquals(MINUS_ENERGY_RECOMMENDATION, recommendation);
+        assertEquals(SAVE_ENERGY_RECOMMENDATION, recommendation);
     }
 
 }
