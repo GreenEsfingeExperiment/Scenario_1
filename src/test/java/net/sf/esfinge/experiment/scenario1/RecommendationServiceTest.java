@@ -8,24 +8,25 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class RecommendationServiceTest {
 
     private static final String RECOMMENDATION = "Tenis Casual received 106 visits this month.\n Also check out Mochila Executiva!";
-    private static final String MINUS_ENERGY_RECOMMENDATION = "Tenis Casual received 106 visits this month.\n Also check out !";
+    private static final String MINUS_ENERGY_RECOMMENDATION = "Tenis Casual received 106 visits this month.";
 
     @Test
     void testFindRecommendation() {
         RecommendationService recommendationService = new RecommendationService();
-        StringBuilder sb = new StringBuilder();
-        recommendationService.findRecommendation(sb);
 
-        assertEquals(RECOMMENDATION, sb.toString());
+        String recommendation = recommendationService.findRecommendation();
+
+        assertEquals(RECOMMENDATION, recommendation);
     }
 
     @Test
     void testFindRecommendationUsingLogic() {
         RecommendationService recommendationService = new RecommendationService();
-        StringBuilder sb = new StringBuilder();
-        recommendationService.findRecommendation(sb);
+        recommendationService.saveConsumptionEnergy(true);
 
-        assertEquals(MINUS_ENERGY_RECOMMENDATION, sb.toString());
+        String recommendation = recommendationService.findRecommendation();
+
+        assertEquals(MINUS_ENERGY_RECOMMENDATION, recommendation);
     }
 
 }
