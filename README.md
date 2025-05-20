@@ -33,7 +33,7 @@ To implement this functionality, when the new method saveConsumptionEnergy() is 
 
 The test class `RecommendationServiceTest` validates the behavior of the recommendation logic.
 
-When you open the project, to make sure that everything is correctly configured, you need to run the tests and teh result should be the one in teh pecture: on test will pass and the other not. When you make all tests pass successfully, your task is complete.
+When you open the project, to make sure that everything is correctly configured, you need to run the tests and the result should be the one in the picture: one test will pass and the other not. When you make all tests pass successfully, your task is complete.
 
 > `IMPORTANT: You cannot change the test code!`
 
