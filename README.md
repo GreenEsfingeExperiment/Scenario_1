@@ -35,6 +35,6 @@ The test class `RecommendationServiceTest` validates the behavior of the recomme
 
 When you open the project, to make sure that everything is correctly configured, you need to run the tests and the result should be the one in the picture: one test will pass and the other not. When you make all tests pass successfully, your task is complete.
 
-> `IMPORTANT: You cannot change the test code!`
+{c:red}IMPORTANT: You cannot change the test code!.{/c}
 
 ![img.png](img.png)
